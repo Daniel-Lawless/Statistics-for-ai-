@@ -4,13 +4,13 @@ Imagine a floor with infinitely many parallel horizontal lines, each separated b
 the floor at random. The question is, what is the probability that the needle crosses one of these lines? The standard case is $L \leq t$.
 
 <p align="center">
-  <img src="assets/buffons-needle-images/buffons-needle-problem-setup.png" alt="Buffon's needle problem setup" width="300">
+  <img src="../assets/buffons-needle-images/buffons-needle-problem-setup.png" alt="Buffon's needle problem setup" width="300">
 </p>
 
 To make it easier to visualize, let's do a vertical translation where we imagine sliding all the needles to sit between the same pair of lines.
 
 <p align="center">
-  <img src="assets/buffons-needle-images/buffons-needle-vertical-translation.png" alt="Buffon's needle vertical translation" width="600">
+  <img src="../assets/buffons-needle-images/buffons-needle-vertical-translation.png" alt="Buffon's needle vertical translation" width="600">
 </p>
 
 When the needle lands on the floor, there are two things that really matter, its angle, and its distance from the nearest line. Let $\theta$ be the angle the needle makes from the horizontal lines, represented by the random variable $\Theta$. We do not need all angles from $0$ to $2\pi$, so we can reduce this to:
@@ -81,7 +81,7 @@ f_{X,\Theta}(x,\theta)
 If we take the needle and split it into 2 halves, each half has length $L/2$. If the needle is at angle $\theta$ then the distance from the center of the needle to one endpoint is:
 
 <p align="center">
-  <img src="assets/buffons-needle-images/buffons-needle-crossing-condition.png" alt="Buffon's needle crossing condition" width="750">
+  <img src="../assets/buffons-needle-images/buffons-needle-crossing-condition.png" alt="Buffon's needle crossing condition" width="600">
 </p>
 
 ```math
