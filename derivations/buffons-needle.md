@@ -104,46 +104,55 @@ Now all we need to do is calculate the probability of this event, since when thi
 
 ```math
 \large
-\begin{aligned}
+\begin{array}{rcll}
 P\left(
 X \leq \frac{L}{2}\sin\theta
 \right)
-&=
+&=&
+\displaystyle
 \int_{0}^{\pi/2}
 \int_{0}^{\frac{L}{2}\sin\theta}
 \frac{4}{\pi t}
 \, dx \, d\theta
 \\[1em]
-&=
+
+&=&
+\displaystyle
 \int_{0}^{\pi/2}
 \left[
 \frac{4}{\pi t}x
 \right]_{0}^{\frac{L}{2}\sin\theta}
 d\theta
-\qquad
+&\qquad
 \text{Integrate w.r.t. } x
 \\[1em]
-&=
+
+&=&
+\displaystyle
 \frac{2L}{\pi t}
 \int_{0}^{\pi/2}
 \sin\theta
 \, d\theta
-\qquad
+&\qquad
 \text{Simplify constants}
 \\[1em]
-&=
+
+&=&
+\displaystyle
 \frac{2L}{\pi t}
 \left[
 -\cos\theta
 \right]_{0}^{\pi/2}
-\qquad
+&\qquad
 \text{Integrate w.r.t. } \theta
 \\[1em]
-&=
+
+&=&
+\displaystyle
 \frac{2L}{\pi t}
-\qquad
+&\qquad
 \text{Final Probability}
-\end{aligned}
+\end{array}
 ```
 
 This is actually a very interesting result since we can use it to approximate $\pi$. Assume we are at home and we have lines drawn on our floor of equal length apart, and suppose we know the distance
