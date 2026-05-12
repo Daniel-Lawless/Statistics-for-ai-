@@ -5,7 +5,7 @@ find its x-coordinate. Let $(\alpha, \beta)$ be the lighthouse's $x$ and $y$ coo
 are the points at which the flashes hit the shoreline.
 
 <p align="center">
-  <img src="../assets/lighthouse-problem-setup.png" alt="Lighthouse problem setup" width="600">
+  <img src="../assets/lighthouse-problem-images/lighthouse-problem-setup.png" alt="Lighthouse problem setup" width="600">
 </p>
 
 ## Bayes rule method
@@ -236,42 +236,16 @@ p(\alpha \mid \beta, x_1, \ldots, x_n)
 \frac{1}{\pi}
 \frac{\beta}{\beta^2 + (x_i - \alpha)^2}
 ```
+
 Let
 
 ```math
 \large
-\mathcal{J}(\alpha)
-=
-\ln\left(
-\prod_{i=1}^{n}
-\frac{1}{\pi}
-\frac{\beta}{\beta^2 + (x_i - \alpha)^2}
-\right)
-```
-
-```math
-\large
-=
-\sum_{i=1}^{n}
-\left[
-\ln\left(
-\frac{1}{\pi}
-\frac{\beta}{\beta^2 + (x_i - \alpha)^2}
-\right)
-\right]
-```
-
-```math
-\large
-=
-\sum_{i=1}^{n}
-\left[
-\ln\left(\frac{1}{\pi}\right)
-+
-\ln(\beta)
--
-\ln\left(\beta^2 + (x_i - \alpha)^2\right)
-\right]
+\begin{aligned}
+\mathcal{J}(\alpha) &= \ln\left( \prod_{i=1}^{n} \frac{1}{\pi} \frac{\beta}{\beta^2 + (x_i - \alpha)^2} \right) \\
+&= \sum_{i=1}^{n} \left[ \ln\left( \frac{1}{\pi} \frac{\beta}{\beta^2 + (x_i - \alpha)^2} \right) \right] \\
+&= \sum_{i=1}^{n} \left[ \ln\left(\frac{1}{\pi}\right) + \ln(\beta) - \ln\left(\beta^2 + (x_i - \alpha)^2\right) \right]
+\end{aligned}
 ```
 
 Differentiate with respect to $\alpha$:
@@ -289,17 +263,8 @@ Differentiate with respect to $\alpha$:
 
 Let the $x$-coordinate that best describes the observed flashes be $\hat{\alpha}$. This value would be one such that
 
-```math
-\large
-\hat{\alpha}
-\text{ satisfies }
-\sum_{i=1}^{n}
-\left[
-\frac{x_i - \hat{\alpha}}
-{\beta^2 + (x_i - \hat{\alpha})^2}
-\right]
-=
-0
-```
+<p align="center">
+  <img src="../assets/lighthouse-problem-images/lighthouse-problem-final-equation.png" alt="Lighthouse problem setup" width="250">
+</p>
 
 Unlike the Gaussian case, where we obtain a neat closed-form expression for the maximum likelihood estimator, this is not the case for the Cauchy likelihood. Therefore, $\hat{\alpha}$ must generally be found numerically. The resulting $\hat{\alpha}$ is the value of the lighthouse's $x$-location that makes the observed flash locations most plausible, and thus is our estimate of the lighthouse's horizontal position.
