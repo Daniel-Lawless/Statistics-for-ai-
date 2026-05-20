@@ -1,4 +1,4 @@
-## MLE for the Poisson Distribution (Different Sized Intervals)
+## 3. MLE for the Poisson Distribution (Different Sized Intervals)
 
 Suppose we observe the number of events occurring in $n$ intervals, but now the intervals do not all have the same length.
 
