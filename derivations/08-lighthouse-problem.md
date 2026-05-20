@@ -1,4 +1,4 @@
-# 1. The Lighthouse Problem
+## 8. The Lighthouse Problem
 
 Assume a lighthouse periodically flashes its light toward a shoreline. Given that we know how far the lighthouse is from the shore (its $y$-coordinate), 
 find its x-coordinate. Let $(\alpha, \beta)$ be the lighthouse's $x$ and $y$ coordinates respectively. Then assume $x_1, \ldots, x_n$ 
