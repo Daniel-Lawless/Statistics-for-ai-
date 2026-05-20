@@ -1,4 +1,4 @@
-# 6. Coupon Collector Problem
+## 6. Coupon Collector Problem
 
 Suppose there are $n$ different coupon types. Each time we buy a coupon, we receive one coupon chosen uniformly at random from the $n$ possible types. The coupon collector problem asks what is the expected number of draws needed to collect all $n$ coupons.
 
