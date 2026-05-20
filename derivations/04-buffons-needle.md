@@ -1,4 +1,4 @@
-## 3. Buffon's Needle
+## 4. Buffon's Needle
 
 Imagine a floor with infinitely many parallel horizontal lines, each separated by a fixed distance $t$. Now we drop a needle of length $L$ onto
 the floor at random. The question is, what is the probability that the needle crosses one of these lines? The standard case is $L \leq t$.
