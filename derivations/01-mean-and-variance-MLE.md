@@ -1,4 +1,4 @@
-## 2. Mean and Variance Derivation
+## 1. Mean and Variance Derivation
 
 Suppose we are running an experiment where we want to estimate an unknown true value $\mu$ from $n$ independent observations, and we do not know the variance of error in our sensor. Then, each observation is assumed to be normally distributed around $\mu$ with unknown variance:
 
