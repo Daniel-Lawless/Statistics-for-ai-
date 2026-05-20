@@ -1,4 +1,4 @@
-# 5. The German Tank Problem
+## 5. The German Tank Problem
 
 This problem is about estimating an unknown total from a small sample.
 
